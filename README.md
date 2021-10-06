@@ -9,7 +9,7 @@ For this project, I implemented parametric tessellators for cubes, cylinders, co
 [Click here to see a quick video demo!
 ](https://youtu.be/Jjbn4XXAHfc)
 
-## Run
+## Running
 
 To run this code, you will need to download QT creator here: https://www.qt.io/download-qt-installer
 Then, you can simply open the project and click run! Make sure to navigate to the 3D canvas.
