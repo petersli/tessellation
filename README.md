@@ -4,7 +4,7 @@
 
 **Note: the relevant code for this project lives in the `shapes` directory and in `scenegraph/ShapesScene.cpp`**
 
-For this project, I implemented parametric tessellators for a cube, cylinder, cone, and sphere.
+For this project, I implemented parametric tessellators for cubes, cylinders, cones, and spheres.
 
 [Click here to see a quick video demo!
 ](https://youtu.be/Jjbn4XXAHfc)
