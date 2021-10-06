@@ -1,5 +1,7 @@
 # Tessellation
 
+![Tessellated sphere](demo.png?raw=true "A tessellated sphere")
+
 **Note: the relevant code for this project lives in the `shapes` directory and in `scenegraph/ShapesScene.cpp`**
 
 For this project, I implemented parametric tessellators for a cube, cylinder, cone, and sphere.
