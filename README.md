@@ -1,8 +1,12 @@
 # Tessellation
 
-**Note: most of the relevant code lives in the `shapes` directory**
+**Note: the relevant code for this project lives in the `shapes` directory and in `scenegraph/ShapesScene.cpp`**
 
 For this project, I implemented parametric tessellators for a cube, cylinder, cone, and sphere.
+
+[Click here to see a quick video demo!
+](https://youtu.be/Jjbn4XXAHfc)
+
 
 ## Data Structures
 
@@ -23,14 +27,14 @@ struct TriMesh {
 Storing vertex indices instead of the vertices themselves helps maintain consistency and reduce 
 the size of the mesh.
 
-## Composition and Inheritance
+## Design Decisions
 
 For the most part, I favored composition over inheritance for this project. I factored out the circular base of the 
-`Cone` and `Cylinder` into a `CircleBase m_circleBase` member variable, and added `Tessellator m_tessellator` 
+`Cone` and `Cylinder` into a `CircleBase m_circleBase` member variable, and added `Tessellator m_tessellator` utility
 to each shape as well.
 
-I did use inheritance, however, by having the `Cube`, `Cylinder`, `Cone`, and `Sphere` all
-extend a new base class `Shape`. `Shape` is a thin wrapper around `OpenGLShape` which allows setting 
+Inheritance was helpful, however, in allowing the `ShapeScene` to keep track of a `Shape m_shape` that could be
+a `Cube`, `Cylinder`, `Cone`, or `Sphere`. The `Shape` class is a thin wrapper I created around `OpenGLShape` which allows setting 
 tessellation parameters (param1 and param2) and has a pure virtual method `initializeVertexData`.
 Every class derived from `Shape` must implement the`initializeVertexData` method in order to be rendered by OpenGL.
 
