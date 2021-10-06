@@ -7,7 +7,7 @@
 #include "TriMesh.h"
 #include "Shape.h"
 
-/** A sphere with radius 0.5 centered at the origin */
+/** A sphere with radius of 0.5, centered at the origin */
 class Sphere : public Shape
 {
 public:

@@ -8,7 +8,7 @@
 #include "Shape.h"
 #include "CircleBase.h"
 
-/** Cylinder bounded by a 1x1x1 cube centered at the origin */
+/** Cone bounded by a 1x1x1 cube centered at the origin */
 class Cone : public Shape
 {
 public:
